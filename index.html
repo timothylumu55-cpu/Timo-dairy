@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>project website design</title>
+
+</head>
+<style>
+    a{
+        font-size: 90px;
+        color: black;
+    }
+</style>
+<body>
+    <section class="header">
+<nav>
+<a href="index.html"> JDP</a>
+<div class="nav-links">
+<i class="fa fa-times"onclick="hideMenu()"></i>
+
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="about us.html">ABOUTUS</a></li>
+<li><a href="products offered.html">PRODUCTS OFFERED</a></li>
+<li><a href="contact us.html">CONTACTUS</a></li>
+
+</ul>
+
+</div>
+<i class="fa fa-bars" onclick="showMenu()"></i>
+
+</nav>
+<!--VIDEO HERE -->
+<video widith="700" height="400" controls>
+    <source src="myvideo.mp4.mp4" type="video/mp4">
+</video>
+
+<div class="text-box">
+<h1>Uganda's biggest dairy products producer</h1>
+<p>Making  sure that the citizens of Uganda have a balanced diet that is rich in proteins</p>
+<a href=""class="hero-btn">Visit us To Know More</a>
+
+</div>
+    </section>
+    <script>
+        var navLinks = document.queryselector(".nav-links");
+        function showMenu() {
+            navLinks.style.right ="0";
+
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>
